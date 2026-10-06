@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 //     return "Ini halaman kedua";
 // });
 
-Route::get('/', [HalamanController::class, 'halamanUtama']);
+Route::get('/', [HalamanController::class, 'beranda']);
+Route::get('/kontak', [HalamanController::class, 'contact']);

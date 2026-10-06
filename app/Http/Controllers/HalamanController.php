@@ -11,4 +11,14 @@ class HalamanController extends Controller
     {
         return view('utama');
     }
+
+    public function beranda()
+    {
+        return view('beranda');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
 }
