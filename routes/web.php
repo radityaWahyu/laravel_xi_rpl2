@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HalamanController::class, 'beranda']);
 Route::get('/kontak', [HalamanController::class, 'contact']);
+Route::get('/registrasi', [HalamanController::class, 'tampilForm']);
+Route::post('/kirim', [HalamanController::class, 'kirimData'])->name('kirim_data');
