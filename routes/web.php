@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HalamanController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -19,3 +20,5 @@ Route::get('/', [HalamanController::class, 'beranda']);
 Route::get('/kontak', [HalamanController::class, 'contact']);
 Route::get('/registrasi', [HalamanController::class, 'tampilForm']);
 Route::post('/kirim', [HalamanController::class, 'kirimData'])->name('kirim_data');
+
+Route::resource('/posts', PostController::class);
